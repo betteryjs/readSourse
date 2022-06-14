@@ -66,20 +66,48 @@ void rb_insert_color(struct rb_node *node, struct rb_root *root)
 {
 	struct rb_node *parent, *gparent;
 
-	while ((parent = node->rb_parent) && parent->rb_color == RB_RED)
+    // 关于插入操作的平衡调整，有两种特殊情况
+    // 1. 如果插入的结点的父结点是黑色的，那我们什么都不做，它仍然满足红黑树定义(这种情况不进入while，do nothing)
+    // 2. 如果插入的是根结点，那么我们直接改变颜色成黑色即可(所以我们这里的parent为null时,不进入while，最后一行变黑
+
+    // 三种情况：
+    // 1）如果关注点node，它的叔叔结点d为红色 ，执行case1
+    // 2）如果关注点node，它的叔叔结点d为黑色 ，且为父节点点右子节点，执行case2
+    // 3）如果关注点node，它的叔叔结点d为黑色 ，且为父节点点左子节点，执行case3
+
+    // case 1 ：
+    // 操作是
+    // 1）将关注点node的父节点，叔叔节点变黑
+    // 2）将关注点node的祖父节点变红
+    // 3）将关注点node变成祖父结点gparent
+    // 4）跳转到case2 或者case3
+
+    // case 2
+    // 1) 关注点变成父节点
+    // 2）围绕这个新的关注点左旋
+    // 3）跳到case 3
+
+    // case 3
+    // 1）围绕关注点的祖父节点右旋
+    // 2）将关注点的父节点和当前的兄弟节点互换颜色(其实就是父和祖交换)
+
+    // node->rb_parent 不为 nullptr 及 node 不是根节点
+    while ((parent = node->rb_parent) && parent->rb_color == RB_RED)
 	{
 		gparent = parent->rb_parent;
 
 		if (parent == gparent->rb_left)
 		{
 			{
+                // uncle 叔叔结点
 				register struct rb_node *uncle = gparent->rb_right;
 				if (uncle && uncle->rb_color == RB_RED)
 				{
-					uncle->rb_color = RB_BLACK;
-					parent->rb_color = RB_BLACK;
-					gparent->rb_color = RB_RED;
-					node = gparent;
+                    // case 1
+					uncle->rb_color = RB_BLACK;  // node的叔叔节点变黑
+					parent->rb_color = RB_BLACK; // node的父节点变黑
+					gparent->rb_color = RB_RED;  // node的祖父节点变红
+					node = gparent;              // node变成祖父结点gparent
 					continue;
 				}
 			}
@@ -96,7 +124,10 @@ void rb_insert_color(struct rb_node *node, struct rb_root *root)
 			parent->rb_color = RB_BLACK;
 			gparent->rb_color = RB_RED;
 			__rb_rotate_right(gparent, root);
-		} else {
+		}
+
+        else {
+            // parent == gparent->rb_right
 			{
 				register struct rb_node *uncle = gparent->rb_left;
 				if (uncle && uncle->rb_color == RB_RED)
@@ -124,6 +155,7 @@ void rb_insert_color(struct rb_node *node, struct rb_root *root)
 		}
 	}
 
+    // 什么操作都不作 将根节点的颜色赋值为 RB_BLACK
 	root->rb_node->rb_color = RB_BLACK;
 }
 

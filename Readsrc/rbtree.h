@@ -111,7 +111,12 @@ struct rb_root
 	struct rb_node *rb_node;
 };
 
+
+
 #define RB_ROOT (struct rb_root){ (struct rb_node *)0, }
+// struct rb_root task_tree = RB_ROOT;
+// struct rb_root task_tree = (struct rb_root){ (struct rb_node *)0, };
+
 #define	rb_entry(ptr, type, member) \
 	((type *)((char *)(ptr)-(unsigned long)(&((type *)0)->member)))
 
