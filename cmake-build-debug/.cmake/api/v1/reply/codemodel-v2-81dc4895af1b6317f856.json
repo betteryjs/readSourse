@@ -1,0 +1,103 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "bin",
+					"jsonFile" : "directory-bin-Debug-0b45b8b6b759d694b552.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Readsrc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "workflowStudy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "list_move::@90a2315b7a9c97cd24d2",
+					"jsonFile" : "target-list_move-Debug-4b0f7a6cd7c693d2f5cb.json",
+					"name" : "list_move",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "listsplit::@90a2315b7a9c97cd24d2",
+					"jsonFile" : "target-listsplit-Debug-954c0d03db30b9ddedae.json",
+					"name" : "listsplit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testList::@90a2315b7a9c97cd24d2",
+					"jsonFile" : "target-testList-Debug-c663555179a9b05625d3.json",
+					"name" : "testList",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testthread::@90a2315b7a9c97cd24d2",
+					"jsonFile" : "target-testthread-Debug-89406d2a58d03cf48100.json",
+					"name" : "testthread",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yjs/CPP/workflowStudy/cmake-build-debug",
+		"source" : "/home/yjs/CPP/workflowStudy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
