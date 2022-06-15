@@ -1,6 +1,6 @@
 bin/CMakeFiles/testList.dir/testList.cpp.o: \
- /home/yjs/CPP/workflowStudy/List/testList.cpp /usr/include/stdc-predef.h \
- /home/yjs/CPP/workflowStudy/List/list.h \
+ /home/yjs/CPP/workflowStudy/Readsrc/testList.cpp \
+ /usr/include/stdc-predef.h /home/yjs/CPP/workflowStudy/Readsrc/list.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h \
  /usr/include/c++/9/cassert \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \

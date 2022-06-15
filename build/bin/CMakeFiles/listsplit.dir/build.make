@@ -70,18 +70,18 @@ include bin/CMakeFiles/listsplit.dir/progress.make
 include bin/CMakeFiles/listsplit.dir/flags.make
 
 bin/CMakeFiles/listsplit.dir/listsplit.cpp.o: bin/CMakeFiles/listsplit.dir/flags.make
-bin/CMakeFiles/listsplit.dir/listsplit.cpp.o: ../List/listsplit.cpp
+bin/CMakeFiles/listsplit.dir/listsplit.cpp.o: ../Readsrc/listsplit.cpp
 bin/CMakeFiles/listsplit.dir/listsplit.cpp.o: bin/CMakeFiles/listsplit.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/CMakeFiles/listsplit.dir/listsplit.cpp.o"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT bin/CMakeFiles/listsplit.dir/listsplit.cpp.o -MF CMakeFiles/listsplit.dir/listsplit.cpp.o.d -o CMakeFiles/listsplit.dir/listsplit.cpp.o -c /home/yjs/CPP/workflowStudy/List/listsplit.cpp
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT bin/CMakeFiles/listsplit.dir/listsplit.cpp.o -MF CMakeFiles/listsplit.dir/listsplit.cpp.o.d -o CMakeFiles/listsplit.dir/listsplit.cpp.o -c /home/yjs/CPP/workflowStudy/Readsrc/listsplit.cpp
 
 bin/CMakeFiles/listsplit.dir/listsplit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/listsplit.dir/listsplit.cpp.i"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yjs/CPP/workflowStudy/List/listsplit.cpp > CMakeFiles/listsplit.dir/listsplit.cpp.i
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yjs/CPP/workflowStudy/Readsrc/listsplit.cpp > CMakeFiles/listsplit.dir/listsplit.cpp.i
 
 bin/CMakeFiles/listsplit.dir/listsplit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/listsplit.dir/listsplit.cpp.s"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yjs/CPP/workflowStudy/List/listsplit.cpp -o CMakeFiles/listsplit.dir/listsplit.cpp.s
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yjs/CPP/workflowStudy/Readsrc/listsplit.cpp -o CMakeFiles/listsplit.dir/listsplit.cpp.s
 
 # Object files for target listsplit
 listsplit_OBJECTS = \
@@ -105,6 +105,6 @@ bin/CMakeFiles/listsplit.dir/clean:
 .PHONY : bin/CMakeFiles/listsplit.dir/clean
 
 bin/CMakeFiles/listsplit.dir/depend:
-	cd /home/yjs/CPP/workflowStudy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yjs/CPP/workflowStudy /home/yjs/CPP/workflowStudy/List /home/yjs/CPP/workflowStudy/build /home/yjs/CPP/workflowStudy/build/bin /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/listsplit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yjs/CPP/workflowStudy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yjs/CPP/workflowStudy /home/yjs/CPP/workflowStudy/Readsrc /home/yjs/CPP/workflowStudy/build /home/yjs/CPP/workflowStudy/build/bin /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/listsplit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bin/CMakeFiles/listsplit.dir/depend
 

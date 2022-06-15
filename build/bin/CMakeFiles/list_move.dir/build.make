@@ -70,18 +70,18 @@ include bin/CMakeFiles/list_move.dir/progress.make
 include bin/CMakeFiles/list_move.dir/flags.make
 
 bin/CMakeFiles/list_move.dir/list_move.cpp.o: bin/CMakeFiles/list_move.dir/flags.make
-bin/CMakeFiles/list_move.dir/list_move.cpp.o: ../List/list_move.cpp
+bin/CMakeFiles/list_move.dir/list_move.cpp.o: ../Readsrc/list_move.cpp
 bin/CMakeFiles/list_move.dir/list_move.cpp.o: bin/CMakeFiles/list_move.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/CMakeFiles/list_move.dir/list_move.cpp.o"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT bin/CMakeFiles/list_move.dir/list_move.cpp.o -MF CMakeFiles/list_move.dir/list_move.cpp.o.d -o CMakeFiles/list_move.dir/list_move.cpp.o -c /home/yjs/CPP/workflowStudy/List/list_move.cpp
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT bin/CMakeFiles/list_move.dir/list_move.cpp.o -MF CMakeFiles/list_move.dir/list_move.cpp.o.d -o CMakeFiles/list_move.dir/list_move.cpp.o -c /home/yjs/CPP/workflowStudy/Readsrc/list_move.cpp
 
 bin/CMakeFiles/list_move.dir/list_move.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/list_move.dir/list_move.cpp.i"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yjs/CPP/workflowStudy/List/list_move.cpp > CMakeFiles/list_move.dir/list_move.cpp.i
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yjs/CPP/workflowStudy/Readsrc/list_move.cpp > CMakeFiles/list_move.dir/list_move.cpp.i
 
 bin/CMakeFiles/list_move.dir/list_move.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/list_move.dir/list_move.cpp.s"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yjs/CPP/workflowStudy/List/list_move.cpp -o CMakeFiles/list_move.dir/list_move.cpp.s
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yjs/CPP/workflowStudy/Readsrc/list_move.cpp -o CMakeFiles/list_move.dir/list_move.cpp.s
 
 # Object files for target list_move
 list_move_OBJECTS = \
@@ -105,6 +105,6 @@ bin/CMakeFiles/list_move.dir/clean:
 .PHONY : bin/CMakeFiles/list_move.dir/clean
 
 bin/CMakeFiles/list_move.dir/depend:
-	cd /home/yjs/CPP/workflowStudy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yjs/CPP/workflowStudy /home/yjs/CPP/workflowStudy/List /home/yjs/CPP/workflowStudy/build /home/yjs/CPP/workflowStudy/build/bin /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/list_move.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yjs/CPP/workflowStudy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yjs/CPP/workflowStudy /home/yjs/CPP/workflowStudy/Readsrc /home/yjs/CPP/workflowStudy/build /home/yjs/CPP/workflowStudy/build/bin /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/list_move.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bin/CMakeFiles/list_move.dir/depend
 

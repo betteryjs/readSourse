@@ -117,6 +117,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+bin/CMakeFiles/testAVL.dir/rule:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/testAVL.dir/rule
+.PHONY : bin/CMakeFiles/testAVL.dir/rule
+
+# Convenience name for target.
+testAVL: bin/CMakeFiles/testAVL.dir/rule
+.PHONY : testAVL
+
+# fast build rule for target.
+testAVL/fast:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/build
+.PHONY : testAVL/fast
+
+# Convenience name for target.
 bin/CMakeFiles/listsplit.dir/rule:
 	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/listsplit.dir/rule
 .PHONY : bin/CMakeFiles/listsplit.dir/rule
@@ -206,6 +220,54 @@ listsplit.cpp.s:
 	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/listsplit.cpp.s
 .PHONY : listsplit.cpp.s
 
+myAVL.o: myAVL.cpp.o
+.PHONY : myAVL.o
+
+# target to build an object file
+myAVL.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/myAVL.cpp.o
+.PHONY : myAVL.cpp.o
+
+myAVL.i: myAVL.cpp.i
+.PHONY : myAVL.i
+
+# target to preprocess a source file
+myAVL.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/myAVL.cpp.i
+.PHONY : myAVL.cpp.i
+
+myAVL.s: myAVL.cpp.s
+.PHONY : myAVL.s
+
+# target to generate assembly for a file
+myAVL.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/myAVL.cpp.s
+.PHONY : myAVL.cpp.s
+
+testAVL.o: testAVL.cpp.o
+.PHONY : testAVL.o
+
+# target to build an object file
+testAVL.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/testAVL.cpp.o
+.PHONY : testAVL.cpp.o
+
+testAVL.i: testAVL.cpp.i
+.PHONY : testAVL.i
+
+# target to preprocess a source file
+testAVL.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/testAVL.cpp.i
+.PHONY : testAVL.cpp.i
+
+testAVL.s: testAVL.cpp.s
+.PHONY : testAVL.s
+
+# target to generate assembly for a file
+testAVL.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/testAVL.cpp.s
+.PHONY : testAVL.cpp.s
+
 testList.o: testList.cpp.o
 .PHONY : testList.o
 
@@ -240,6 +302,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_move"
 	@echo "... listsplit"
+	@echo "... testAVL"
 	@echo "... testList"
 	@echo "... list_move.o"
 	@echo "... list_move.i"
@@ -247,6 +310,12 @@ help:
 	@echo "... listsplit.o"
 	@echo "... listsplit.i"
 	@echo "... listsplit.s"
+	@echo "... myAVL.o"
+	@echo "... myAVL.i"
+	@echo "... myAVL.s"
+	@echo "... testAVL.o"
+	@echo "... testAVL.i"
+	@echo "... testAVL.s"
 	@echo "... testList.o"
 	@echo "... testList.i"
 	@echo "... testList.s"

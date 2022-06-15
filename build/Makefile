@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named testAVL
+
+# Build rule for target.
+testAVL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testAVL
+.PHONY : testAVL
+
+# fast build rule for target.
+testAVL/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/build
+.PHONY : testAVL/fast
+
+#=============================================================================
 # Target rules for targets named listsplit
 
 # Build rule for target.
@@ -165,6 +178,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_move"
 	@echo "... listsplit"
+	@echo "... testAVL"
 	@echo "... testList"
 .PHONY : help
 

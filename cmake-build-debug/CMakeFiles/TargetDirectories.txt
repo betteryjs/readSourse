@@ -3,6 +3,6 @@
 /home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/rebuild_cache.dir
 /home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/edit_cache.dir
 /home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/testList.dir
-/home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/testthread.dir
+/home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/testAVL.dir
 /home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/list_move.dir
 /home/yjs/CPP/workflowStudy/cmake-build-debug/bin/CMakeFiles/listsplit.dir

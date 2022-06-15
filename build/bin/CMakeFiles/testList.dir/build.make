@@ -70,18 +70,18 @@ include bin/CMakeFiles/testList.dir/progress.make
 include bin/CMakeFiles/testList.dir/flags.make
 
 bin/CMakeFiles/testList.dir/testList.cpp.o: bin/CMakeFiles/testList.dir/flags.make
-bin/CMakeFiles/testList.dir/testList.cpp.o: ../List/testList.cpp
+bin/CMakeFiles/testList.dir/testList.cpp.o: ../Readsrc/testList.cpp
 bin/CMakeFiles/testList.dir/testList.cpp.o: bin/CMakeFiles/testList.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object bin/CMakeFiles/testList.dir/testList.cpp.o"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT bin/CMakeFiles/testList.dir/testList.cpp.o -MF CMakeFiles/testList.dir/testList.cpp.o.d -o CMakeFiles/testList.dir/testList.cpp.o -c /home/yjs/CPP/workflowStudy/List/testList.cpp
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT bin/CMakeFiles/testList.dir/testList.cpp.o -MF CMakeFiles/testList.dir/testList.cpp.o.d -o CMakeFiles/testList.dir/testList.cpp.o -c /home/yjs/CPP/workflowStudy/Readsrc/testList.cpp
 
 bin/CMakeFiles/testList.dir/testList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testList.dir/testList.cpp.i"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yjs/CPP/workflowStudy/List/testList.cpp > CMakeFiles/testList.dir/testList.cpp.i
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yjs/CPP/workflowStudy/Readsrc/testList.cpp > CMakeFiles/testList.dir/testList.cpp.i
 
 bin/CMakeFiles/testList.dir/testList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testList.dir/testList.cpp.s"
-	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yjs/CPP/workflowStudy/List/testList.cpp -o CMakeFiles/testList.dir/testList.cpp.s
+	cd /home/yjs/CPP/workflowStudy/build/bin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yjs/CPP/workflowStudy/Readsrc/testList.cpp -o CMakeFiles/testList.dir/testList.cpp.s
 
 # Object files for target testList
 testList_OBJECTS = \
@@ -105,6 +105,6 @@ bin/CMakeFiles/testList.dir/clean:
 .PHONY : bin/CMakeFiles/testList.dir/clean
 
 bin/CMakeFiles/testList.dir/depend:
-	cd /home/yjs/CPP/workflowStudy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yjs/CPP/workflowStudy /home/yjs/CPP/workflowStudy/List /home/yjs/CPP/workflowStudy/build /home/yjs/CPP/workflowStudy/build/bin /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/testList.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yjs/CPP/workflowStudy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yjs/CPP/workflowStudy /home/yjs/CPP/workflowStudy/Readsrc /home/yjs/CPP/workflowStudy/build /home/yjs/CPP/workflowStudy/build/bin /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/testList.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bin/CMakeFiles/testList.dir/depend
 

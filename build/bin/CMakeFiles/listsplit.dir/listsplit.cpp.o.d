@@ -1,6 +1,6 @@
 bin/CMakeFiles/listsplit.dir/listsplit.cpp.o: \
- /home/yjs/CPP/workflowStudy/List/listsplit.cpp \
- /usr/include/stdc-predef.h /home/yjs/CPP/workflowStudy/List/list.h \
+ /home/yjs/CPP/workflowStudy/Readsrc/listsplit.cpp \
+ /usr/include/stdc-predef.h /home/yjs/CPP/workflowStudy/Readsrc/list.h \
  /usr/include/c++/9/stdlib.h /usr/include/c++/9/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

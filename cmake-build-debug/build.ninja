@@ -123,41 +123,41 @@ build bin/testList: CXX_EXECUTABLE_LINKER__testList_Debug bin/CMakeFiles/testLis
   TARGET_PDB = testList.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target testthread
+# Object build statements for EXECUTABLE target testAVL
 
 
 #############################################
-# Order-only phony target for testthread
+# Order-only phony target for testAVL
 
-build cmake_object_order_depends_target_testthread: phony || bin/CMakeFiles/testthread.dir
+build cmake_object_order_depends_target_testAVL: phony || bin/CMakeFiles/testAVL.dir
 
-build bin/CMakeFiles/testthread.dir/testthread.cpp.o: CXX_COMPILER__testthread_Debug /home/yjs/CPP/workflowStudy/Readsrc/testthread.cpp || cmake_object_order_depends_target_testthread
-  DEP_FILE = bin/CMakeFiles/testthread.dir/testthread.cpp.o.d
+build bin/CMakeFiles/testAVL.dir/testAVL.cpp.o: CXX_COMPILER__testAVL_Debug /home/yjs/CPP/workflowStudy/Readsrc/testAVL.cpp || cmake_object_order_depends_target_testAVL
+  DEP_FILE = bin/CMakeFiles/testAVL.dir/testAVL.cpp.o.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = bin/CMakeFiles/testthread.dir
-  OBJECT_FILE_DIR = bin/CMakeFiles/testthread.dir
+  OBJECT_DIR = bin/CMakeFiles/testAVL.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/testAVL.dir
 
-build bin/CMakeFiles/testthread.dir/thrdpool.c.o: C_COMPILER__testthread_Debug /home/yjs/CPP/workflowStudy/Readsrc/thrdpool.c || cmake_object_order_depends_target_testthread
-  DEP_FILE = bin/CMakeFiles/testthread.dir/thrdpool.c.o.d
-  FLAGS = -g
-  OBJECT_DIR = bin/CMakeFiles/testthread.dir
-  OBJECT_FILE_DIR = bin/CMakeFiles/testthread.dir
+build bin/CMakeFiles/testAVL.dir/myAVL.cpp.o: CXX_COMPILER__testAVL_Debug /home/yjs/CPP/workflowStudy/Readsrc/myAVL.cpp || cmake_object_order_depends_target_testAVL
+  DEP_FILE = bin/CMakeFiles/testAVL.dir/myAVL.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = bin/CMakeFiles/testAVL.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/testAVL.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target testthread
+# Link build statements for EXECUTABLE target testAVL
 
 
 #############################################
-# Link the executable bin/testthread
+# Link the executable bin/testAVL
 
-build bin/testthread: CXX_EXECUTABLE_LINKER__testthread_Debug bin/CMakeFiles/testthread.dir/testthread.cpp.o bin/CMakeFiles/testthread.dir/thrdpool.c.o
+build bin/testAVL: CXX_EXECUTABLE_LINKER__testAVL_Debug bin/CMakeFiles/testAVL.dir/testAVL.cpp.o bin/CMakeFiles/testAVL.dir/myAVL.cpp.o
   FLAGS = -g
-  OBJECT_DIR = bin/CMakeFiles/testthread.dir
+  OBJECT_DIR = bin/CMakeFiles/testAVL.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = bin/testthread
-  TARGET_PDB = testthread.dbg
+  TARGET_FILE = bin/testAVL
+  TARGET_PDB = testAVL.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target list_move
@@ -228,9 +228,9 @@ build list_move: phony bin/list_move
 
 build listsplit: phony bin/listsplit
 
-build testList: phony bin/testList
+build testAVL: phony bin/testAVL
 
-build testthread: phony bin/testthread
+build testList: phony bin/testList
 
 # =============================================================================
 # Folder targets.
@@ -247,7 +247,7 @@ build all: phony bin/all
 #############################################
 # Folder: /home/yjs/CPP/workflowStudy/cmake-build-debug/bin
 
-build bin/all: phony bin/testList bin/testthread bin/list_move bin/listsplit
+build bin/all: phony bin/testList bin/testAVL bin/list_move bin/listsplit
 
 # =============================================================================
 # Built-in targets
