@@ -1,4 +1,4 @@
-# Install script for directory: /home/yjs/CPP/workflowStudy/Readsrc
+# Install script for directory: /home/yjs/CPP/workflowStudy/MakeWhell
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

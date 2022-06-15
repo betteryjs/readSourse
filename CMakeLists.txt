@@ -3,4 +3,4 @@ project(workflowStudy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_subdirectory(Readsrc bin)
+add_subdirectory(MakeWhell bin)
