@@ -1,1 +1,3 @@
-add_executable(AVL AVL.cpp)
+add_executable(AVL  testAVL.cpp AVL.cpp )
+
+

@@ -1,26 +1,31 @@
 //
 // Created by yjs on 2022/6/15.
 //
-#include <iostream>
+//#include <iostream>
+//#include <string>
+//
+//template<class Key>
+// struct AVLNode{
+//    Key key;
+//    int height;
+//    struct AVLNode* left;
+//    struct AVLNode* right;
+//    AVLNode(Key key, AVLNode<Key> * left, AVLNode<Key> * right, int height){
+//        this->key=key;
+//        this->left=left;
+//        this->right=right;
+//        this->height=height;
+//    }
+//};
+#include "AVL.h"
 
-template<class Key>
- struct AVLNode{
-    Key key;
-    int height;
-    struct AVLNode* left;
-    struct AVLNode* right;
-    AVLNode(Key key, AVLNode<Key> * left, AVLNode<Key> * right, int height){
-        this->key=key;
-        this->left=left;
-        this->right=right;
-        this->height=height;
-    }
-};
+
+
 
 template<class Key>
 inline int getHeight(AVLNode<Key> * node)
 {
-    return (node== nullptr )? -1:node->height;
+    return (node== nullptr )? 0:node->height;
 }
 
 /* LL(Y rotates to the right): ( Right Rotation )
@@ -63,8 +68,8 @@ AVLNode<Key> * RR_Rotate(  AVLNode<Key> * k2)
     AVLNode<Key>* k1 = k2->right;
     k2->right = k1->left;
     k1->left = k2;
-    k2->height = max(getHeight(k2->left), getHeight(k2->right)) + 1;
-    k1->height = max(getHeight(k1->left), k2->height) + 1;
+    k2->height = std::max(getHeight(k2->left), getHeight(k2->right)) + 1;
+    k1->height = std::max(getHeight(k1->right), k2->height) + 1;
     return k1;
 }
 
@@ -115,10 +120,14 @@ AVLNode<Key> * RL_Rotate(AVLNode<Key> * k3)
 
 
 template<class Key>
-AVLNode<Key> * Insert(AVLNode<Key> * root, Key key)
+AVLNode<Key> * Insert(AVLNode<Key> * root, int key)
 {
     if(root == nullptr)
-        return (root = AVLNode<Key> (key, nullptr, nullptr));
+    {
+
+        root=new AVLNode<Key>(key);
+        return root;
+    }
     else if(key < root->key)
         root->left = Insert(root->left, key);
     else //key >= root->key
@@ -134,12 +143,14 @@ AVLNode<Key> * Insert(AVLNode<Key> * root, Key key)
         else
             root = LR_Rotate(root);
     }
-    else if(getHeight(root->rchild) - getHeight(root->lchild) == 2)
+    else if(getHeight(root->right) - getHeight(root->left) == 2)
     {
         // 操作root的右孩子
         if(key < root->right->key)
+            // 右孩子的左子树
             root = RL_Rotate(root);
         else
+            // 操作右孩子的右子树
             root = RR_Rotate(root);
     }
     return root;
@@ -168,7 +179,7 @@ AVLNode<Key> * Delete(AVLNode<Key> * root, Key key)
         else{
             // root's left and right all exists
             AVLNode<Key> * temp = root->right;
-            while(temp->left!= nullptr) temp = temp->lchild;
+            while(temp->left!= nullptr) temp = temp->left;
             /* replace the value */
             root->key = temp->key;
             /* Delete the node (successor node) that should be really deleted */
@@ -176,21 +187,21 @@ AVLNode<Key> * Delete(AVLNode<Key> * root, Key key)
         }
     }
     else if(key < root->key)
-        root->lchild = Delete(root->left, key);
+        root->left = Delete(root->left, key);
     else
-        root->rchild = Delete(root->right, key);
+        root->right = Delete(root->right, key);
 
-    root->height = max(getHeight(root->left), getHeight(root->right)) + 1;
+    root->height = std::max(getHeight(root->left), getHeight(root->right)) + 1;
     if(getHeight(root->right) - getHeight(root->left) == 2)
     {
-        if(getHeight(root->rchild->rchild) >= getHeight(root->rchild->lchild))
+        if(getHeight(root->right->right) >= getHeight(root->right->left))
             root = RR_Rotate(root);
         else
             root = RL_Rotate(root);
     }
-    else if(getHeight(root->lchild) - getHeight(root->rchild) == 2)
+    else if(getHeight(root->left) - getHeight(root->right) == 2)
     {
-        if(getHeight(root->lchild->lchild) >= getHeight(root->lchild->rchild))
+        if(getHeight(root->left->left) >= getHeight(root->left->right))
             root = LL_Rotate(root);
         else
             root = LR_Rotate(root);
@@ -199,3 +210,116 @@ AVLNode<Key> * Delete(AVLNode<Key> * root, Key key)
 }
 
 
+//template<class Key>
+//void output_impl(AVLNode<Key> * n, bool left, std::string & indent)
+//{
+//    using std::cout;
+//    using std::endl;
+//    if (n->right)
+//    {
+//        output_impl(n->right, false, indent + (left ? "|     " : "      "));
+//    }
+//    cout << indent;
+//    cout << (left ? '\\' : '/');
+//    cout << "-----";
+//    cout << n->key << endl;
+//    if (n->left)
+//    {
+//        output_impl(n->left, true, indent + (left ? "      " : "|     "));
+//    }
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//template<class Key>
+//void output(AVLNode<Key> * root)
+//{
+//    if (root->right)
+//    {
+//        output_impl(root->right, false, "");
+//    }
+//    std::cout << root->key << std::endl;
+//    if (root->left)
+//    {
+//        output_impl(root->left, true, "");
+//    }
+//}
+
+template<class Key>
+vector<vector<int>> levelOrder(AVLNode<Key> *root) {
+    vector<vector<int>> res;
+    if (root == nullptr) {
+        return res;
+    }
+
+    queue<AVLNode<Key> *> queueTreeNodes;
+    queueTreeNodes.push(root);
+    while (!queueTreeNodes.empty()) {
+
+        int sz = queueTreeNodes.size();
+        vector<int> cens;
+        for (int i = 0; i < sz; ++i) {
+            AVLNode<Key> *node = queueTreeNodes.front();
+            queueTreeNodes.pop();
+            cens.push_back(node->key);
+            if (node->left != nullptr) {
+                queueTreeNodes.push(node->left);
+            }
+            if (node->right != nullptr) {
+                queueTreeNodes.push(node->right);
+            }
+
+        }
+        res.push_back(cens);
+
+
+    }
+    return res;
+
+
+}
+
+
+template<class Key>
+void InOrder(AVLNode<Key> * root)
+{
+    if(root)
+    {
+        InOrder(root->left);
+        printf("key: %d height: %d ", root->key, root->height);
+        if(root->left)
+            printf("left child: %d ", root->left->key);
+        if(root->right)
+            printf("right child: %d ", root->right->key);
+        printf("\n");
+        InOrder(root->right);
+    }
+}
+
+
+
+template<class Key>
+void PrintTree(AVLNode<Key> * root){
+    cout << "##################" <<endl;
+    auto res= levelOrder(root);
+    for (auto c:res) {
+        for (auto b :c) {
+            cout << "\t"<< b<< "\t";
+        }
+        cout <<endl;
+
+    }
+    cout << "##################" <<endl;
+
+}

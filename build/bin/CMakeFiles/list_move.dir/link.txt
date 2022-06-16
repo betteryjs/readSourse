@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/list_move.dir/list_move.cpp.o -o list_move 

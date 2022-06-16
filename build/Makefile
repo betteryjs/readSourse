@@ -117,56 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testAVL
+# Target rules for targets named AVL
 
 # Build rule for target.
-testAVL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testAVL
-.PHONY : testAVL
+AVL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AVL
+.PHONY : AVL
 
 # fast build rule for target.
-testAVL/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/build
-.PHONY : testAVL/fast
-
-#=============================================================================
-# Target rules for targets named listsplit
-
-# Build rule for target.
-listsplit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listsplit
-.PHONY : listsplit
-
-# fast build rule for target.
-listsplit/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/build
-.PHONY : listsplit/fast
-
-#=============================================================================
-# Target rules for targets named list_move
-
-# Build rule for target.
-list_move: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 list_move
-.PHONY : list_move
-
-# fast build rule for target.
-list_move/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/build
-.PHONY : list_move/fast
-
-#=============================================================================
-# Target rules for targets named testList
-
-# Build rule for target.
-testList: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testList
-.PHONY : testList
-
-# fast build rule for target.
-testList/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/build
-.PHONY : testList/fast
+AVL/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/build
+.PHONY : AVL/fast
 
 # Help Target
 help:
@@ -176,10 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... list_move"
-	@echo "... listsplit"
-	@echo "... testAVL"
-	@echo "... testList"
+	@echo "... AVL"
 .PHONY : help
 
 

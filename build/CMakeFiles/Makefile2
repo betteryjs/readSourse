@@ -78,10 +78,7 @@ clean: bin/clean
 # Directory level rules for directory bin
 
 # Recursive "all" directory target.
-bin/all: bin/CMakeFiles/testAVL.dir/all
-bin/all: bin/CMakeFiles/listsplit.dir/all
-bin/all: bin/CMakeFiles/list_move.dir/all
-bin/all: bin/CMakeFiles/testList.dir/all
+bin/all: bin/CMakeFiles/AVL.dir/all
 .PHONY : bin/all
 
 # Recursive "preinstall" directory target.
@@ -89,115 +86,34 @@ bin/preinstall:
 .PHONY : bin/preinstall
 
 # Recursive "clean" directory target.
-bin/clean: bin/CMakeFiles/testAVL.dir/clean
-bin/clean: bin/CMakeFiles/listsplit.dir/clean
-bin/clean: bin/CMakeFiles/list_move.dir/clean
-bin/clean: bin/CMakeFiles/testList.dir/clean
+bin/clean: bin/CMakeFiles/AVL.dir/clean
 .PHONY : bin/clean
 
 #=============================================================================
-# Target rules for target bin/CMakeFiles/testAVL.dir
+# Target rules for target bin/CMakeFiles/AVL.dir
 
 # All Build rule for target.
-bin/CMakeFiles/testAVL.dir/all:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/depend
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=5,6,7 "Built target testAVL"
-.PHONY : bin/CMakeFiles/testAVL.dir/all
+bin/CMakeFiles/AVL.dir/all:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/depend
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=1,2,3 "Built target AVL"
+.PHONY : bin/CMakeFiles/AVL.dir/all
 
 # Build rule for subdir invocation for target.
-bin/CMakeFiles/testAVL.dir/rule: cmake_check_build_system
+bin/CMakeFiles/AVL.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/testAVL.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/AVL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 0
-.PHONY : bin/CMakeFiles/testAVL.dir/rule
+.PHONY : bin/CMakeFiles/AVL.dir/rule
 
 # Convenience name for target.
-testAVL: bin/CMakeFiles/testAVL.dir/rule
-.PHONY : testAVL
+AVL: bin/CMakeFiles/AVL.dir/rule
+.PHONY : AVL
 
 # clean rule for target.
-bin/CMakeFiles/testAVL.dir/clean:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testAVL.dir/build.make bin/CMakeFiles/testAVL.dir/clean
-.PHONY : bin/CMakeFiles/testAVL.dir/clean
-
-#=============================================================================
-# Target rules for target bin/CMakeFiles/listsplit.dir
-
-# All Build rule for target.
-bin/CMakeFiles/listsplit.dir/all:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/depend
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=3,4 "Built target listsplit"
-.PHONY : bin/CMakeFiles/listsplit.dir/all
-
-# Build rule for subdir invocation for target.
-bin/CMakeFiles/listsplit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/listsplit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 0
-.PHONY : bin/CMakeFiles/listsplit.dir/rule
-
-# Convenience name for target.
-listsplit: bin/CMakeFiles/listsplit.dir/rule
-.PHONY : listsplit
-
-# clean rule for target.
-bin/CMakeFiles/listsplit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/clean
-.PHONY : bin/CMakeFiles/listsplit.dir/clean
-
-#=============================================================================
-# Target rules for target bin/CMakeFiles/list_move.dir
-
-# All Build rule for target.
-bin/CMakeFiles/list_move.dir/all:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/depend
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=1,2 "Built target list_move"
-.PHONY : bin/CMakeFiles/list_move.dir/all
-
-# Build rule for subdir invocation for target.
-bin/CMakeFiles/list_move.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/list_move.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 0
-.PHONY : bin/CMakeFiles/list_move.dir/rule
-
-# Convenience name for target.
-list_move: bin/CMakeFiles/list_move.dir/rule
-.PHONY : list_move
-
-# clean rule for target.
-bin/CMakeFiles/list_move.dir/clean:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/clean
-.PHONY : bin/CMakeFiles/list_move.dir/clean
-
-#=============================================================================
-# Target rules for target bin/CMakeFiles/testList.dir
-
-# All Build rule for target.
-bin/CMakeFiles/testList.dir/all:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/depend
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/CPP/workflowStudy/build/CMakeFiles --progress-num=8,9 "Built target testList"
-.PHONY : bin/CMakeFiles/testList.dir/all
-
-# Build rule for subdir invocation for target.
-bin/CMakeFiles/testList.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/testList.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/CPP/workflowStudy/build/CMakeFiles 0
-.PHONY : bin/CMakeFiles/testList.dir/rule
-
-# Convenience name for target.
-testList: bin/CMakeFiles/testList.dir/rule
-.PHONY : testList
-
-# clean rule for target.
-bin/CMakeFiles/testList.dir/clean:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/clean
-.PHONY : bin/CMakeFiles/testList.dir/clean
+bin/CMakeFiles/AVL.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/clean
+.PHONY : bin/CMakeFiles/AVL.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

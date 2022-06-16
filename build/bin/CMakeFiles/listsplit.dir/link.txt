@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/listsplit.dir/listsplit.cpp.o -o listsplit 

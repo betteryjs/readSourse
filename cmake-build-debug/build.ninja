@@ -100,6 +100,12 @@ build bin/rebuild_cache: phony bin/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_AVL: phony || bin/CMakeFiles/AVL.dir
 
+build bin/CMakeFiles/AVL.dir/testAVL.cpp.o: CXX_COMPILER__AVL_Debug /home/yjs/CPP/workflowStudy/MakeWhell/testAVL.cpp || cmake_object_order_depends_target_AVL
+  DEP_FILE = bin/CMakeFiles/AVL.dir/testAVL.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = bin/CMakeFiles/AVL.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/AVL.dir
+
 build bin/CMakeFiles/AVL.dir/AVL.cpp.o: CXX_COMPILER__AVL_Debug /home/yjs/CPP/workflowStudy/MakeWhell/AVL.cpp || cmake_object_order_depends_target_AVL
   DEP_FILE = bin/CMakeFiles/AVL.dir/AVL.cpp.o.d
   FLAGS = -g -std=gnu++14
@@ -114,7 +120,7 @@ build bin/CMakeFiles/AVL.dir/AVL.cpp.o: CXX_COMPILER__AVL_Debug /home/yjs/CPP/wo
 #############################################
 # Link the executable bin/AVL
 
-build bin/AVL: CXX_EXECUTABLE_LINKER__AVL_Debug bin/CMakeFiles/AVL.dir/AVL.cpp.o
+build bin/AVL: CXX_EXECUTABLE_LINKER__AVL_Debug bin/CMakeFiles/AVL.dir/testAVL.cpp.o bin/CMakeFiles/AVL.dir/AVL.cpp.o
   FLAGS = -g
   OBJECT_DIR = bin/CMakeFiles/AVL.dir
   POST_BUILD = :
