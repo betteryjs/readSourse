@@ -117,17 +117,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AVL
+# Target rules for targets named testrbTree
 
 # Build rule for target.
-AVL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AVL
-.PHONY : AVL
+testrbTree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testrbTree
+.PHONY : testrbTree
 
 # fast build rule for target.
-AVL/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/build
-.PHONY : AVL/fast
+testrbTree/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/build
+.PHONY : testrbTree/fast
+
+#=============================================================================
+# Target rules for targets named listsplit
+
+# Build rule for target.
+listsplit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listsplit
+.PHONY : listsplit
+
+# fast build rule for target.
+listsplit/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/build
+.PHONY : listsplit/fast
+
+#=============================================================================
+# Target rules for targets named list_move
+
+# Build rule for target.
+list_move: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 list_move
+.PHONY : list_move
+
+# fast build rule for target.
+list_move/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/build
+.PHONY : list_move/fast
+
+#=============================================================================
+# Target rules for targets named thrdTash
+
+# Build rule for target.
+thrdTash: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thrdTash
+.PHONY : thrdTash
+
+# fast build rule for target.
+thrdTash/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/thrdTash.dir/build.make bin/CMakeFiles/thrdTash.dir/build
+.PHONY : thrdTash/fast
+
+#=============================================================================
+# Target rules for targets named testList
+
+# Build rule for target.
+testList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testList
+.PHONY : testList
+
+# fast build rule for target.
+testList/fast:
+	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/build
+.PHONY : testList/fast
 
 # Help Target
 help:
@@ -137,7 +189,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... AVL"
+	@echo "... list_move"
+	@echo "... listsplit"
+	@echo "... testList"
+	@echo "... testrbTree"
+	@echo "... thrdTash"
 .PHONY : help
 
 

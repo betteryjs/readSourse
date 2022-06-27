@@ -117,66 +117,218 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-bin/CMakeFiles/AVL.dir/rule:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/AVL.dir/rule
-.PHONY : bin/CMakeFiles/AVL.dir/rule
+bin/CMakeFiles/testrbTree.dir/rule:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/testrbTree.dir/rule
+.PHONY : bin/CMakeFiles/testrbTree.dir/rule
 
 # Convenience name for target.
-AVL: bin/CMakeFiles/AVL.dir/rule
-.PHONY : AVL
+testrbTree: bin/CMakeFiles/testrbTree.dir/rule
+.PHONY : testrbTree
 
 # fast build rule for target.
-AVL/fast:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/build
-.PHONY : AVL/fast
+testrbTree/fast:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/build
+.PHONY : testrbTree/fast
 
-AVL.o: AVL.cpp.o
-.PHONY : AVL.o
+# Convenience name for target.
+bin/CMakeFiles/listsplit.dir/rule:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/listsplit.dir/rule
+.PHONY : bin/CMakeFiles/listsplit.dir/rule
+
+# Convenience name for target.
+listsplit: bin/CMakeFiles/listsplit.dir/rule
+.PHONY : listsplit
+
+# fast build rule for target.
+listsplit/fast:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/build
+.PHONY : listsplit/fast
+
+# Convenience name for target.
+bin/CMakeFiles/list_move.dir/rule:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/list_move.dir/rule
+.PHONY : bin/CMakeFiles/list_move.dir/rule
+
+# Convenience name for target.
+list_move: bin/CMakeFiles/list_move.dir/rule
+.PHONY : list_move
+
+# fast build rule for target.
+list_move/fast:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/build
+.PHONY : list_move/fast
+
+# Convenience name for target.
+bin/CMakeFiles/thrdTash.dir/rule:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/thrdTash.dir/rule
+.PHONY : bin/CMakeFiles/thrdTash.dir/rule
+
+# Convenience name for target.
+thrdTash: bin/CMakeFiles/thrdTash.dir/rule
+.PHONY : thrdTash
+
+# fast build rule for target.
+thrdTash/fast:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/thrdTash.dir/build.make bin/CMakeFiles/thrdTash.dir/build
+.PHONY : thrdTash/fast
+
+# Convenience name for target.
+bin/CMakeFiles/testList.dir/rule:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/testList.dir/rule
+.PHONY : bin/CMakeFiles/testList.dir/rule
+
+# Convenience name for target.
+testList: bin/CMakeFiles/testList.dir/rule
+.PHONY : testList
+
+# fast build rule for target.
+testList/fast:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/build
+.PHONY : testList/fast
+
+list_move.o: list_move.cpp.o
+.PHONY : list_move.o
 
 # target to build an object file
-AVL.cpp.o:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/AVL.cpp.o
-.PHONY : AVL.cpp.o
+list_move.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/list_move.cpp.o
+.PHONY : list_move.cpp.o
 
-AVL.i: AVL.cpp.i
-.PHONY : AVL.i
+list_move.i: list_move.cpp.i
+.PHONY : list_move.i
 
 # target to preprocess a source file
-AVL.cpp.i:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/AVL.cpp.i
-.PHONY : AVL.cpp.i
+list_move.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/list_move.cpp.i
+.PHONY : list_move.cpp.i
 
-AVL.s: AVL.cpp.s
-.PHONY : AVL.s
+list_move.s: list_move.cpp.s
+.PHONY : list_move.s
 
 # target to generate assembly for a file
-AVL.cpp.s:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/AVL.cpp.s
-.PHONY : AVL.cpp.s
+list_move.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/list_move.dir/build.make bin/CMakeFiles/list_move.dir/list_move.cpp.s
+.PHONY : list_move.cpp.s
 
-testAVL.o: testAVL.cpp.o
-.PHONY : testAVL.o
+listsplit.o: listsplit.cpp.o
+.PHONY : listsplit.o
 
 # target to build an object file
-testAVL.cpp.o:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/testAVL.cpp.o
-.PHONY : testAVL.cpp.o
+listsplit.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/listsplit.cpp.o
+.PHONY : listsplit.cpp.o
 
-testAVL.i: testAVL.cpp.i
-.PHONY : testAVL.i
+listsplit.i: listsplit.cpp.i
+.PHONY : listsplit.i
 
 # target to preprocess a source file
-testAVL.cpp.i:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/testAVL.cpp.i
-.PHONY : testAVL.cpp.i
+listsplit.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/listsplit.cpp.i
+.PHONY : listsplit.cpp.i
 
-testAVL.s: testAVL.cpp.s
-.PHONY : testAVL.s
+listsplit.s: listsplit.cpp.s
+.PHONY : listsplit.s
 
 # target to generate assembly for a file
-testAVL.cpp.s:
-	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/AVL.dir/build.make bin/CMakeFiles/AVL.dir/testAVL.cpp.s
-.PHONY : testAVL.cpp.s
+listsplit.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/listsplit.dir/build.make bin/CMakeFiles/listsplit.dir/listsplit.cpp.s
+.PHONY : listsplit.cpp.s
+
+rbtree.o: rbtree.c.o
+.PHONY : rbtree.o
+
+# target to build an object file
+rbtree.c.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/rbtree.c.o
+.PHONY : rbtree.c.o
+
+rbtree.i: rbtree.c.i
+.PHONY : rbtree.i
+
+# target to preprocess a source file
+rbtree.c.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/rbtree.c.i
+.PHONY : rbtree.c.i
+
+rbtree.s: rbtree.c.s
+.PHONY : rbtree.s
+
+# target to generate assembly for a file
+rbtree.c.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/rbtree.c.s
+.PHONY : rbtree.c.s
+
+testList.o: testList.cpp.o
+.PHONY : testList.o
+
+# target to build an object file
+testList.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/testList.cpp.o
+.PHONY : testList.cpp.o
+
+testList.i: testList.cpp.i
+.PHONY : testList.i
+
+# target to preprocess a source file
+testList.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/testList.cpp.i
+.PHONY : testList.cpp.i
+
+testList.s: testList.cpp.s
+.PHONY : testList.s
+
+# target to generate assembly for a file
+testList.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testList.dir/build.make bin/CMakeFiles/testList.dir/testList.cpp.s
+.PHONY : testList.cpp.s
+
+testrbTree.o: testrbTree.cpp.o
+.PHONY : testrbTree.o
+
+# target to build an object file
+testrbTree.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/testrbTree.cpp.o
+.PHONY : testrbTree.cpp.o
+
+testrbTree.i: testrbTree.cpp.i
+.PHONY : testrbTree.i
+
+# target to preprocess a source file
+testrbTree.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/testrbTree.cpp.i
+.PHONY : testrbTree.cpp.i
+
+testrbTree.s: testrbTree.cpp.s
+.PHONY : testrbTree.s
+
+# target to generate assembly for a file
+testrbTree.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/testrbTree.dir/build.make bin/CMakeFiles/testrbTree.dir/testrbTree.cpp.s
+.PHONY : testrbTree.cpp.s
+
+thrdTash.o: thrdTash.cpp.o
+.PHONY : thrdTash.o
+
+# target to build an object file
+thrdTash.cpp.o:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/thrdTash.dir/build.make bin/CMakeFiles/thrdTash.dir/thrdTash.cpp.o
+.PHONY : thrdTash.cpp.o
+
+thrdTash.i: thrdTash.cpp.i
+.PHONY : thrdTash.i
+
+# target to preprocess a source file
+thrdTash.cpp.i:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/thrdTash.dir/build.make bin/CMakeFiles/thrdTash.dir/thrdTash.cpp.i
+.PHONY : thrdTash.cpp.i
+
+thrdTash.s: thrdTash.cpp.s
+.PHONY : thrdTash.s
+
+# target to generate assembly for a file
+thrdTash.cpp.s:
+	cd /home/yjs/CPP/workflowStudy/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/thrdTash.dir/build.make bin/CMakeFiles/thrdTash.dir/thrdTash.cpp.s
+.PHONY : thrdTash.cpp.s
 
 # Help Target
 help:
@@ -186,13 +338,29 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... AVL"
-	@echo "... AVL.o"
-	@echo "... AVL.i"
-	@echo "... AVL.s"
-	@echo "... testAVL.o"
-	@echo "... testAVL.i"
-	@echo "... testAVL.s"
+	@echo "... list_move"
+	@echo "... listsplit"
+	@echo "... testList"
+	@echo "... testrbTree"
+	@echo "... thrdTash"
+	@echo "... list_move.o"
+	@echo "... list_move.i"
+	@echo "... list_move.s"
+	@echo "... listsplit.o"
+	@echo "... listsplit.i"
+	@echo "... listsplit.s"
+	@echo "... rbtree.o"
+	@echo "... rbtree.i"
+	@echo "... rbtree.s"
+	@echo "... testList.o"
+	@echo "... testList.i"
+	@echo "... testList.s"
+	@echo "... testrbTree.o"
+	@echo "... testrbTree.i"
+	@echo "... testrbTree.s"
+	@echo "... thrdTash.o"
+	@echo "... thrdTash.i"
+	@echo "... thrdTash.s"
 .PHONY : help
 
 

@@ -7,3 +7,6 @@
 [submodule "wfrest"]
 	path = wfrest
 	url = https://github.com/wfrest/wfrest.git
+[submodule "Tinyhttpd"]
+	path = Tinyhttpd
+	url = https://github.com/EZLippi/Tinyhttpd.git

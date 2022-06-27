@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../MakeWhell/CMakeLists.txt"
+  "../Readsrc/CMakeLists.txt"
   "CMakeFiles/3.20.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.0/CMakeSystem.cmake"
@@ -45,5 +45,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "bin/CMakeFiles/AVL.dir/DependInfo.cmake"
+  "bin/CMakeFiles/testrbTree.dir/DependInfo.cmake"
+  "bin/CMakeFiles/listsplit.dir/DependInfo.cmake"
+  "bin/CMakeFiles/list_move.dir/DependInfo.cmake"
+  "bin/CMakeFiles/thrdTash.dir/DependInfo.cmake"
+  "bin/CMakeFiles/testList.dir/DependInfo.cmake"
   )

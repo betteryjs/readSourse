@@ -1,5 +1,9 @@
 /home/yjs/CPP/workflowStudy/build/CMakeFiles/rebuild_cache.dir
 /home/yjs/CPP/workflowStudy/build/CMakeFiles/edit_cache.dir
 /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/rebuild_cache.dir
+/home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/testrbTree.dir
+/home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/listsplit.dir
 /home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/edit_cache.dir
-/home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/AVL.dir
+/home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/list_move.dir
+/home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/thrdTash.dir
+/home/yjs/CPP/workflowStudy/build/bin/CMakeFiles/testList.dir

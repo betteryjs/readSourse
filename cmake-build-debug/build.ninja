@@ -92,46 +92,179 @@ build bin/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build bin/rebuild_cache: phony bin/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target AVL
+# Object build statements for EXECUTABLE target thrdTash
 
 
 #############################################
-# Order-only phony target for AVL
+# Order-only phony target for thrdTash
 
-build cmake_object_order_depends_target_AVL: phony || bin/CMakeFiles/AVL.dir
+build cmake_object_order_depends_target_thrdTash: phony || bin/CMakeFiles/thrdTash.dir
 
-build bin/CMakeFiles/AVL.dir/testAVL.cpp.o: CXX_COMPILER__AVL_Debug /home/yjs/CPP/workflowStudy/MakeWhell/testAVL.cpp || cmake_object_order_depends_target_AVL
-  DEP_FILE = bin/CMakeFiles/AVL.dir/testAVL.cpp.o.d
+build bin/CMakeFiles/thrdTash.dir/thrdTash.cpp.o: CXX_COMPILER__thrdTash_Debug /home/yjs/CPP/workflowStudy/Readsrc/thrdTash.cpp || cmake_object_order_depends_target_thrdTash
+  DEP_FILE = bin/CMakeFiles/thrdTash.dir/thrdTash.cpp.o.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = bin/CMakeFiles/AVL.dir
-  OBJECT_FILE_DIR = bin/CMakeFiles/AVL.dir
-
-build bin/CMakeFiles/AVL.dir/AVL.cpp.o: CXX_COMPILER__AVL_Debug /home/yjs/CPP/workflowStudy/MakeWhell/AVL.cpp || cmake_object_order_depends_target_AVL
-  DEP_FILE = bin/CMakeFiles/AVL.dir/AVL.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = bin/CMakeFiles/AVL.dir
-  OBJECT_FILE_DIR = bin/CMakeFiles/AVL.dir
+  OBJECT_DIR = bin/CMakeFiles/thrdTash.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/thrdTash.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target AVL
+# Link build statements for EXECUTABLE target thrdTash
 
 
 #############################################
-# Link the executable bin/AVL
+# Link the executable bin/thrdTash
 
-build bin/AVL: CXX_EXECUTABLE_LINKER__AVL_Debug bin/CMakeFiles/AVL.dir/testAVL.cpp.o bin/CMakeFiles/AVL.dir/AVL.cpp.o
+build bin/thrdTash: CXX_EXECUTABLE_LINKER__thrdTash_Debug bin/CMakeFiles/thrdTash.dir/thrdTash.cpp.o
   FLAGS = -g
-  OBJECT_DIR = bin/CMakeFiles/AVL.dir
+  LINK_LIBRARIES = -lworkflow
+  OBJECT_DIR = bin/CMakeFiles/thrdTash.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = bin/AVL
-  TARGET_PDB = AVL.dbg
+  TARGET_FILE = bin/thrdTash
+  TARGET_PDB = thrdTash.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target testList
+
+
+#############################################
+# Order-only phony target for testList
+
+build cmake_object_order_depends_target_testList: phony || bin/CMakeFiles/testList.dir
+
+build bin/CMakeFiles/testList.dir/testList.cpp.o: CXX_COMPILER__testList_Debug /home/yjs/CPP/workflowStudy/Readsrc/testList.cpp || cmake_object_order_depends_target_testList
+  DEP_FILE = bin/CMakeFiles/testList.dir/testList.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = bin/CMakeFiles/testList.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/testList.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target testList
+
+
+#############################################
+# Link the executable bin/testList
+
+build bin/testList: CXX_EXECUTABLE_LINKER__testList_Debug bin/CMakeFiles/testList.dir/testList.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = bin/CMakeFiles/testList.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/testList
+  TARGET_PDB = testList.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target list_move
+
+
+#############################################
+# Order-only phony target for list_move
+
+build cmake_object_order_depends_target_list_move: phony || bin/CMakeFiles/list_move.dir
+
+build bin/CMakeFiles/list_move.dir/list_move.cpp.o: CXX_COMPILER__list_move_Debug /home/yjs/CPP/workflowStudy/Readsrc/list_move.cpp || cmake_object_order_depends_target_list_move
+  DEP_FILE = bin/CMakeFiles/list_move.dir/list_move.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = bin/CMakeFiles/list_move.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/list_move.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target list_move
+
+
+#############################################
+# Link the executable bin/list_move
+
+build bin/list_move: CXX_EXECUTABLE_LINKER__list_move_Debug bin/CMakeFiles/list_move.dir/list_move.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = bin/CMakeFiles/list_move.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/list_move
+  TARGET_PDB = list_move.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target listsplit
+
+
+#############################################
+# Order-only phony target for listsplit
+
+build cmake_object_order_depends_target_listsplit: phony || bin/CMakeFiles/listsplit.dir
+
+build bin/CMakeFiles/listsplit.dir/listsplit.cpp.o: CXX_COMPILER__listsplit_Debug /home/yjs/CPP/workflowStudy/Readsrc/listsplit.cpp || cmake_object_order_depends_target_listsplit
+  DEP_FILE = bin/CMakeFiles/listsplit.dir/listsplit.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = bin/CMakeFiles/listsplit.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/listsplit.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target listsplit
+
+
+#############################################
+# Link the executable bin/listsplit
+
+build bin/listsplit: CXX_EXECUTABLE_LINKER__listsplit_Debug bin/CMakeFiles/listsplit.dir/listsplit.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = bin/CMakeFiles/listsplit.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/listsplit
+  TARGET_PDB = listsplit.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target testrbTree
+
+
+#############################################
+# Order-only phony target for testrbTree
+
+build cmake_object_order_depends_target_testrbTree: phony || bin/CMakeFiles/testrbTree.dir
+
+build bin/CMakeFiles/testrbTree.dir/testrbTree.cpp.o: CXX_COMPILER__testrbTree_Debug /home/yjs/CPP/workflowStudy/Readsrc/testrbTree.cpp || cmake_object_order_depends_target_testrbTree
+  DEP_FILE = bin/CMakeFiles/testrbTree.dir/testrbTree.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = bin/CMakeFiles/testrbTree.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/testrbTree.dir
+
+build bin/CMakeFiles/testrbTree.dir/rbtree.c.o: C_COMPILER__testrbTree_Debug /home/yjs/CPP/workflowStudy/Readsrc/rbtree.c || cmake_object_order_depends_target_testrbTree
+  DEP_FILE = bin/CMakeFiles/testrbTree.dir/rbtree.c.o.d
+  FLAGS = -g
+  OBJECT_DIR = bin/CMakeFiles/testrbTree.dir
+  OBJECT_FILE_DIR = bin/CMakeFiles/testrbTree.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target testrbTree
+
+
+#############################################
+# Link the executable bin/testrbTree
+
+build bin/testrbTree: CXX_EXECUTABLE_LINKER__testrbTree_Debug bin/CMakeFiles/testrbTree.dir/testrbTree.cpp.o bin/CMakeFiles/testrbTree.dir/rbtree.c.o
+  FLAGS = -g
+  OBJECT_DIR = bin/CMakeFiles/testrbTree.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/testrbTree
+  TARGET_PDB = testrbTree.dbg
 
 # =============================================================================
 # Target aliases.
 
-build AVL: phony bin/AVL
+build list_move: phony bin/list_move
+
+build listsplit: phony bin/listsplit
+
+build testList: phony bin/testList
+
+build testrbTree: phony bin/testrbTree
+
+build thrdTash: phony bin/thrdTash
 
 # =============================================================================
 # Folder targets.
@@ -148,7 +281,7 @@ build all: phony bin/all
 #############################################
 # Folder: /home/yjs/CPP/workflowStudy/cmake-build-debug/bin
 
-build bin/all: phony bin/AVL
+build bin/all: phony bin/thrdTash bin/testList bin/list_move bin/listsplit bin/testrbTree
 
 # =============================================================================
 # Built-in targets
@@ -157,14 +290,14 @@ build bin/all: phony bin/AVL
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../MakeWhell/CMakeLists.txt /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Readsrc/CMakeLists.txt /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../MakeWhell/CMakeLists.txt /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Readsrc/CMakeLists.txt /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /opt/clion/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################
